@@ -10,6 +10,10 @@ class Environment {
     return '.env.development';
   }
 
+  static String get apiKey{
+    return dotenv.env['API_KEY'] ?? 'API_KEY NOT FOUND';
+  }
+
   static String get paymentBaseUrl {
     return dotenv.env['PAYMENT_URL'] ?? 'PAYMENT_URL not found';
   }

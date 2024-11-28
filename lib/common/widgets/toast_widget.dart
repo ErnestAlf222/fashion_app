@@ -1,10 +1,11 @@
-import 'package:fashion/common/utils/kcolors.dart';
-import 'package:fashion/common/widgets/app_style.dart';
+
+import 'package:fashion_app/common/utils/kcolors.dart';
+import 'package:fashion_app/common/widgets/app_style.dart';
 import 'package:flutter/material.dart';
 
 
 class ThinToastManager {
-  static final _toastDuration =  Duration(seconds: 3);
+  static const _toastDuration =  Duration(seconds: 3);
   static OverlayEntry? _overlayEntry;
 
   static void showThinToast(BuildContext context, String message) {
